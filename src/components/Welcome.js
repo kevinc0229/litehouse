@@ -12,15 +12,19 @@ export default function Welcome() {
     >
       <Box
         sx={{
+          display: 'flex',
+          flexDirection: 'column',
           width: 500,
           height: 400,
           mx: "auto",
+          alignItems: 'center',
+          justifyContent: 'center' 
         }}
       >
-        <Typography variant="h1" sx={{ mx: "auto" }}>
+        <Typography variant="h1" sx={{ mx: "auto",  textAlign: "center" }}>
           LOGO
         </Typography>{" "}
-        <Typography variant="body1" sx={{ mx: "auto" }}>
+        <Typography variant="body1" sx={{ mx: "auto", textAlign: "center" }}>
           Something regarding what we believe
         </Typography>
       </Box>

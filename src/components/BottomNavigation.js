@@ -12,6 +12,7 @@ function Item(props) {
         fontWeight: "500",
         mx: "auto",
         width: 300,
+        justifyContent: "flex-start",
         ...sx,
       }}
       {...other}
