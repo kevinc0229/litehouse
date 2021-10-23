@@ -8,11 +8,10 @@ function Item(props) {
     <Button
       sx={{
         color: "black",
-        textAlign: "left",
         fontSize: 15,
         fontWeight: "500",
-        mx: 20,
-        width: 200,
+        mx: "auto",
+        width: 300,
         ...sx,
       }}
       {...other}
@@ -23,6 +22,9 @@ export default function BottomNavigation() {
   return (
     <Box
       sx={{
+        mt: 5,
+        width: 600,
+        mx: "auto",
         display: "grid",
         gap: 2,
         gridTemplateColumns: "repeat(2, 1fr)",
