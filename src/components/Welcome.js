@@ -6,19 +6,23 @@ export default function Welcome() {
   return (
     <Box
       sx={{
-        height: 400,
+        p: 5,
+        height: '70vh',
         backgroundColor: "#F8F2F0",
+        display: "flex",
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}
     >
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          width: 500,
-          height: 400,
+          display: "inline-block",
+          width: "auto",
+          height: "auto",
           mx: "auto",
-          alignItems: 'center',
-          justifyContent: 'center' 
+          p: 5
+           
         }}
       >
         <Typography variant="h1" sx={{ mx: "auto",  textAlign: "center" }}>
