@@ -1,14 +1,14 @@
 import "./App.css";
 import ButtonAppBar from "./components/ButtonAppBar";
-import Footer from "./components/BottomNavigation";
+import BottomNavigation from "./components/BottomNavigation";
 
 function App() {
   return (
-    <div>
+    <main>
       <ButtonAppBar />
-
-      <Footer />
-    </div>
+      <Welcome />
+      <BottomNavigation />
+    </main>
   );
 }
 

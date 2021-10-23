@@ -1,16 +1,36 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import "./css/BottomNavigation.css";
+import Button from "@mui/material/Button";
 
-export default function SimpleBottomNavigation() {
+function Item(props) {
+  const { sx, ...other } = props;
   return (
-    <div classname="footer">
-      <Box
-        sx={{
-          height: 300,
-          backgroundColor: "primary.dark",
-        }}
-      />
-    </div>
+    <Button
+      sx={{
+        color: "black",
+        textAlign: "left",
+        fontSize: 15,
+        fontWeight: "500",
+        mx: 20,
+        width: 200,
+        ...sx,
+      }}
+      {...other}
+    />
+  );
+}
+export default function BottomNavigation() {
+  return (
+    <Box
+      sx={{
+        display: "grid",
+        gap: 2,
+        gridTemplateColumns: "repeat(2, 1fr)",
+      }}
+    >
+      <Item> Contact </Item> <Item> Change Country </Item>{" "}
+      <Item> About Us </Item> <Item> FAQ </Item>{" "}
+      <Item> Terms & Conditions </Item>{" "}
+    </Box>
   );
 }
