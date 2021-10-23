@@ -10,11 +10,11 @@ export default function Login() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Typography variant="h6">Login</Typography>
+        <Typography variant="h6"> Login </Typography>{" "}
         <TextField id="outlined-basic" label="Username" variant="outlined" />
         <TextField id="outlined-basic" label="Password" variant="outlined" />
-        <Button variant="contained">Enter</Button>
-      </Container>
+        <Button variant="contained"> Enter </Button>{" "}
+      </Container>{" "}
     </React.Fragment>
   );
 }
