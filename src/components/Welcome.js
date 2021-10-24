@@ -5,21 +5,16 @@ import welcome from "../img/welcome.jpg";
 
 export default function Welcome() {
   return (
-    <Box
-      sx={{
-        height: 400,
-        backgroundImage: `url(${welcome})`,
-      }}
-    >
+
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          width: 500,
-          height: 400,
-          mx: "auto",
+          p: 5,
+          height: '60vh',
           alignItems: "center",
           justifyContent: "center",
+          backgroundImage: `url(${welcome})`,
         }}
       >
         <Typography
@@ -38,6 +33,7 @@ export default function Welcome() {
             mx: "auto",
             textAlign: "center",
             color: "#f1f2f6",
+            width: 500,
           }}
         >
           -The state of our souls, our need for Christ(Romans 3: 23) - We are
@@ -45,7 +41,6 @@ export default function Welcome() {
           through trust in Jesus Christ(Romans 10: 9 - 10, Galatians 2: 16,
           Ephesians 2: 8 - 9){" "}
         </Typography>{" "}
-      </Box>{" "}
-    </Box>
+      </Box>
   );
 }

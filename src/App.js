@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
 import BottomNavigation from "./components/BottomNavigation";
+import WelcomeQuestionnaire from "./components/WelcomeQuestionnaire";
 
 function App() {
   return (
@@ -73,23 +74,16 @@ function App() {
             <Home />
           </Route>{" "}
           <Route path="/questionnaire" exact>
+            <WelcomeQuestionnaire />
             <Questionnaire />
           </Route>{" "}
           <Redirect to="/" />
         </Switch>{" "}
-<<<<<<< HEAD
-        <Box
-        >
-          <BottomNavigation></BottomNavigation>
-        </Box>
-      </Router>
-=======
       </Router>{" "}
       <Box>
         {" "}
         <BottomNavigation />
       </Box>
->>>>>>> 487ba73fb2a8c38666feee3a2fd69d47416c0d17
     </main>
   );
 }

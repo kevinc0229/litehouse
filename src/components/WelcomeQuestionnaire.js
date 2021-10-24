@@ -3,33 +3,29 @@ import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import welcome from "../img/welcome.jpg";
 
-export default function WelcomeQuestionnaire() {
+export default function Welcome() {
   return (
-    <Box
-      sx={{
-        height: 400,
-        backgroundImage: `url(${welcome})`,
-      }}
-    >
+
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          height: 400,
-          mx: "auto",
+          p: 5,
+          height: '30vh',
           alignItems: "center",
           justifyContent: "center",
+          backgroundImage: `url(${welcome})`,
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             mx: "auto",
             textAlign: "center",
             color: "#f1f2f6",
           }}
         >
-          LET'S GET TO KNOW YOU{" "}
+          Let's get to know you.{" "}
         </Typography>{" "}
         <Typography
           variant="body1"
@@ -37,11 +33,11 @@ export default function WelcomeQuestionnaire() {
             mx: "auto",
             textAlign: "center",
             color: "#f1f2f6",
+            width: 500,
           }}
         >
-          Here are some questions for you{" "}
+          filler{" "}
         </Typography>{" "}
-      </Box>{" "}
-    </Box>
+      </Box>
   );
 }
