@@ -2,11 +2,14 @@ import Questions from "../components/Questions";
 import { Box } from "@mui/system";
 import Button from "@mui/material/Button";
 import WelcomeQuestionnaire from "../components/WelcomeQuestionnaire";
+import TestAPI from "../components/Api";
 
 function Questionnaire() {
+  // testAPI = new TestAPI();
   return (
     <main>
       {" "}
+      <TestAPI />
       <Box
         sx={{
           display: "flex",
@@ -24,6 +27,7 @@ function Questionnaire() {
           }}
           variant="contained"
           color="inherit"
+          onClick={TestAPI.callAPI}
         >
           {" "}
           Submit{" "}

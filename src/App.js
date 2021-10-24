@@ -17,6 +17,7 @@ import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
 import BottomNavigation from "./components/BottomNavigation";
 import WelcomeQuestionnaire from "./components/WelcomeQuestionnaire";
+import TestAPI from "./components/Api";
 
 function App() {
   return (
