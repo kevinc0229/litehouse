@@ -5,8 +5,7 @@ function Home() {
   return (
     <main>
       {" "}
-      {/* <ButtonAppBar /> */} <Welcome />
-      <BottomNavigation />
+      <Welcome /> <BottomNavigation />{" "}
     </main>
   );
 }

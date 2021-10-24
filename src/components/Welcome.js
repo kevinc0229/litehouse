@@ -37,7 +37,10 @@ export default function Welcome() {
             textAlign: "center",
           }}
         >
-          Something regarding what we believe{" "}
+          -The state of our souls, our need for Christ (Romans 3:23) - We are
+          all deserving of eternal hell (Romans 6:23) - We are saved by faith
+          through trust in Jesus Christ (Romans 10:9-10, Galatians 2:16,
+          Ephesians 2:8-9){" "}
         </Typography>{" "}
       </Box>{" "}
     </Box>

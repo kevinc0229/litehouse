@@ -15,59 +15,69 @@ import { Link } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
-
+import BottomNavigation from "./components/BottomNavigation";
 function App() {
   return (
-    <Router>
-      <Box
-        sx={{
-          flexGrow: 1,
-        }}
-      >
-        <AppBar
-          position="static"
-          elevation={0}
+    <main>
+      {" "}
+      <Router>
+        <Box
           sx={{
-            backgroundColor: "white",
+            flexGrow: 1,
           }}
         >
-          <Toolbar>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{
-                flexGrow: 1,
-                color: "black",
-              }}
-            >
-              LOGO{" "}
-            </Typography>{" "}
-            <Button
-              component={Link}
-              to="/questionnaire"
-              color="inherit"
-              sx={{ color: "black" }}
-            >
-              {" "}
-              Questionnaire
-            </Button>{" "}
-            <Button color="inherit" sx={{ color: "black" }}>
-              {" "}
-              Login{" "}
-            </Button>{" "}
-          </Toolbar>{" "}
-        </AppBar>{" "}
-      </Box>
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>{" "}
-        <Route path="/questionnaire" exact>
-          <Questionnaire />
-        </Route>{" "}
-        <Redirect to="/" />
-      </Switch>{" "}
-    </Router>
+          <AppBar
+            position="static"
+            elevation={0}
+            sx={{
+              backgroundColor: "white",
+            }}
+          >
+            <Toolbar>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{
+                  flexGrow: 1,
+                  color: "black",
+                }}
+              >
+                LOGO{" "}
+              </Typography>{" "}
+              <Button
+                component={Link}
+                to="/questionnaire"
+                color="inherit"
+                sx={{
+                  color: "black",
+                }}
+              >
+                {" "}
+                Questionnaire{" "}
+              </Button>{" "}
+              <Button
+                color="inherit"
+                sx={{
+                  color: "black",
+                }}
+              >
+                {" "}
+                Login{" "}
+              </Button>{" "}
+            </Toolbar>{" "}
+          </AppBar>{" "}
+        </Box>{" "}
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>{" "}
+          <Route path="/questionnaire" exact>
+            <Questionnaire />
+          </Route>{" "}
+          <Redirect to="/" />
+        </Switch>{" "}
+      </Router>
+    </main>
   );
 }
 
