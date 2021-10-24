@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "currentUser": "",
+      "adminStatus": "",
+      "id": 2
+    },
+    {
+      "currentUser": "",
+      "adminStatus": "",
+      "id": 3
+    },
+    {
+      "currentUser": "kevin",
+      "adminStatus": "true",
+      "id": 4
+    },
+    {
+      "currentUser": "xyz",
+      "adminStatus": "true",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
