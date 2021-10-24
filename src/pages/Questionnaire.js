@@ -19,7 +19,7 @@ function Questionnaire() {
         }}
       >
         <WelcomeQuestionnaire />
-        <Questions />
+        <Questions />{" "}
         <Button
           sx={{
             color: "black",

@@ -8,6 +8,23 @@ import { Typography } from "@mui/material";
 
 function MultipleQuestion(props) {
   let questionlist = [];
+  let res = {};
+
+  const handleChange = (e, element) => {
+    res[element] = e.target.checked;
+  };
+
+  const handleClick = (e) => {
+    let query = [];
+
+    for (const key in res) {
+      if (res[key] == true) {
+        query.push(key);
+      }
+    }
+
+    console.log(query);
+  };
 
   return (
     <Box
@@ -35,7 +52,11 @@ function MultipleQuestion(props) {
         >
           {props.ans.forEach((element) => {
             questionlist.push(
-              <FormControlLabel control={<Checkbox />} label={element} />
+              <FormControlLabel
+                control={<Checkbox />}
+                label={element}
+                onChange={(e) => handleChange(e, element)}
+              />
             );
           })}
           {questionlist}
@@ -44,6 +65,7 @@ function MultipleQuestion(props) {
           sx={{
             color: "black",
           }}
+          onClick={handleClick}
         >
           {" "}
           Save{" "}

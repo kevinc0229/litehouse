@@ -1,14 +1,14 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
-import welcome from "../img/welcome.jpg";
+import question from "../img/question.jpg";
 
 export default function WelcomeQuestionnaire() {
   return (
     <Box
       sx={{
         height: 400,
-        backgroundImage: `url(${welcome})`,
+        backgroundImage: `url(${question})`,
       }}
     >
       <Box
