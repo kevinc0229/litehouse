@@ -29,6 +29,7 @@ export default function BottomNavigation() {
         display: "grid",
         gap: 2,
         gridTemplateColumns: "repeat(2, 1fr)",
+        pb: 20,
       }}
     >
       <Item> Contact </Item> <Item> Change Country </Item>{" "}

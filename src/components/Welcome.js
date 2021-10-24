@@ -17,21 +17,37 @@ export default function Welcome() {
     >
       <Box
         sx={{
-          display: "inline-block",
-          width: "auto",
-          height: "auto",
+          display: "flex",
+          flexDirection: "column",
+          width: 500,
+          height: 400,
           mx: "auto",
-          p: 5
-           
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <Typography variant="h1" sx={{ mx: "auto",  textAlign: "center" }}>
-          LOGO
+        <Typography
+          variant="h1"
+          sx={{
+            mx: "auto",
+            textAlign: "center",
+          }}
+        >
+          LOGO{" "}
         </Typography>{" "}
-        <Typography variant="body1" sx={{ mx: "auto", textAlign: "center" }}>
-          Something regarding what we believe
-        </Typography>
-      </Box>
+        <Typography
+          variant="body1"
+          sx={{
+            mx: "auto",
+            textAlign: "center",
+          }}
+        >
+          -The state of our souls, our need for Christ (Romans 3:23) - We are
+          all deserving of eternal hell (Romans 6:23) - We are saved by faith
+          through trust in Jesus Christ (Romans 10:9-10, Galatians 2:16,
+          Ephesians 2:8-9){" "}
+        </Typography>{" "}
+      </Box>{" "}
     </Box>
   );
 }

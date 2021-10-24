@@ -1,4 +1,6 @@
 import * as React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -30,11 +32,25 @@ export default function ButtonAppBar() {
           >
             LOGO{" "}
           </Typography>{" "}
-          <Button color="inherit" sx={{ color: "black" }}>
-            {" "}
-            Questionnaire{" "}
-          </Button>{" "}
-          <Button color="inherit" sx={{ color: "black" }}>
+          <Router>
+            <Button
+              component={Link}
+              to="/questionnaire"
+              color="inherit"
+              sx={{
+                color: "black",
+              }}
+            >
+              {" "}
+              Questionnaire{" "}
+            </Button>{" "}
+          </Router>{" "}
+          <Button
+            color="inherit"
+            sx={{
+              color: "black",
+            }}
+          >
             {" "}
             Login{" "}
           </Button>{" "}
