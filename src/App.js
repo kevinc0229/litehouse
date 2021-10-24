@@ -17,6 +17,7 @@ import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
 import BottomNavigation from "./components/BottomNavigation";
 import WelcomeQuestionnaire from "./components/WelcomeQuestionnaire";
+import Results from "./components/Results.js"
 
 function App() {
   return (
@@ -76,6 +77,9 @@ function App() {
           <Route path="/questionnaire" exact>
             <WelcomeQuestionnaire />
             <Questionnaire />
+          </Route>{" "}
+          <Route path="/results" exact>
+            <Results />
           </Route>{" "}
           <Redirect to="/" />
         </Switch>{" "}
