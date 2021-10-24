@@ -32,8 +32,8 @@ export default function BottomNavigation() {
       }}
     >
       <Item> Contact </Item> <Item> Change Country </Item>{" "}
-      <Item> About Us </Item> <Item> FAQ </Item>{" "}
-      <Item> Terms & Conditions </Item>{" "}
+      <Item> About Us </Item> <Item> Terms & Conditions </Item>{" "}
+      <Item> FAQ </Item>{" "}
     </Box>
   );
 }

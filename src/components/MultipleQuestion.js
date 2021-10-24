@@ -6,12 +6,13 @@ import { Box } from "@mui/system";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 
-function SingleQuestion() {
+function MultipleQuestion(props) {
+  let questionlist = [];
+
   return (
     <Box
       sx={{
         height: 400,
-        backgroundColor: "#F8F2F0",
         display: "flex",
         flexDirection: "column",
         mx: "auto",
@@ -25,14 +26,20 @@ function SingleQuestion() {
           width: 500,
         }}
       >
-        <Typography>What days are you available?</Typography>
-        <FormGroup sx={{ pt: 2, pb: 2 }}>
-          <FormControlLabel control={<Checkbox />} label="Monday" />
-          <FormControlLabel control={<Checkbox />} label="Tuesday" />
-          <FormControlLabel control={<Checkbox />} label="Wednesday" />
-          <FormControlLabel control={<Checkbox />} label="Thursday" />
-          <FormControlLabel control={<Checkbox />} label="Friday" />
-        </FormGroup>
+        <Typography> {props.question} </Typography>{" "}
+        <FormGroup
+          sx={{
+            pt: 2,
+            pb: 2,
+          }}
+        >
+          {props.ans.forEach((element) => {
+            questionlist.push(
+              <FormControlLabel control={<Checkbox />} label={element} />
+            );
+          })}
+          {questionlist}
+        </FormGroup>{" "}
         <Button
           sx={{
             color: "black",
@@ -46,4 +53,4 @@ function SingleQuestion() {
   );
 }
 
-export default SingleQuestion;
+export default MultipleQuestion;
