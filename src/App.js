@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
 import BottomNavigation from "./components/BottomNavigation";
+import WelcomeQuestionnaire from "./components/WelcomeQuestionnaire";
+
 function App() {
   return (
     <main>
@@ -30,7 +32,7 @@ function App() {
             position="static"
             elevation={0}
             sx={{
-              backgroundColor: "white",
+              backgroundColor: "#f1f2f6",
             }}
           >
             <Toolbar>
@@ -72,15 +74,16 @@ function App() {
             <Home />
           </Route>{" "}
           <Route path="/questionnaire" exact>
+            <WelcomeQuestionnaire />
             <Questionnaire />
           </Route>{" "}
           <Redirect to="/" />
         </Switch>{" "}
-        <Box
-        >
-          <BottomNavigation></BottomNavigation>
-        </Box>
-      </Router>
+      </Router>{" "}
+      <Box>
+        {" "}
+        <BottomNavigation />
+      </Box>
     </main>
   );
 }

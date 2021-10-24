@@ -11,21 +11,21 @@ export default function Welcome() {
           display: "flex",
           flexDirection: "column",
           p: 5,
-          height: '60vh',
+          height: '30vh',
           alignItems: "center",
           justifyContent: "center",
           backgroundImage: `url(${welcome})`,
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             mx: "auto",
             textAlign: "center",
             color: "#f1f2f6",
           }}
         >
-          LOGO{" "}
+          Let's get to know you.{" "}
         </Typography>{" "}
         <Typography
           variant="body1"
@@ -36,10 +36,7 @@ export default function Welcome() {
             width: 500,
           }}
         >
-          -The state of our souls, our need for Christ(Romans 3: 23) - We are
-          all deserving of eternal hell(Romans 6: 23) - We are saved by faith
-          through trust in Jesus Christ(Romans 10: 9 - 10, Galatians 2: 16,
-          Ephesians 2: 8 - 9){" "}
+          filler{" "}
         </Typography>{" "}
       </Box>
   );

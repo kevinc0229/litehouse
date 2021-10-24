@@ -4,8 +4,7 @@ function Home() {
   return (
     <main>
       {" "}
-      <Welcome /> 
-      {" "}
+      <Welcome />{" "}
     </main>
   );
 }

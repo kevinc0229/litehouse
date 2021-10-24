@@ -1,7 +1,7 @@
 import Questions from "../components/Questions";
-import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Button from "@mui/material/Button";
+import WelcomeQuestionnaire from "../components/WelcomeQuestionnaire";
 
 function Questionnaire() {
   return (
@@ -15,16 +15,8 @@ function Questionnaire() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#F8F2F0",
-          pb: 10,
         }}
       >
-        <Typography
-          sx={{
-            pt: 10,
-          }}
-        >
-          QUESTIONNAIRE
-        </Typography>
         <Questions />
         <Button
           sx={{
@@ -36,8 +28,7 @@ function Questionnaire() {
           {" "}
           Submit{" "}
         </Button>{" "}
-      </Box>
-      
+      </Box>{" "}
     </main>
   );
 }
