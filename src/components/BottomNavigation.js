@@ -11,8 +11,12 @@ function Item(props) {
         fontSize: 15,
         fontWeight: "500",
         mx: "auto",
+<<<<<<< HEAD
         width: "auto",
         justifyContent: "flex-start",
+=======
+        width: 300,
+>>>>>>> 487ba73fb2a8c38666feee3a2fd69d47416c0d17
         ...sx,
       }}
       {...other}
@@ -33,8 +37,8 @@ export default function BottomNavigation() {
       }}
     >
       <Item> Contact </Item> <Item> Change Country </Item>{" "}
-      <Item> About Us </Item> <Item> FAQ </Item>{" "}
-      <Item> Terms & Conditions </Item>{" "}
+      <Item> About Us </Item> <Item> Terms & Conditions </Item>{" "}
+      <Item> FAQ </Item>{" "}
     </Box>
   );
 }

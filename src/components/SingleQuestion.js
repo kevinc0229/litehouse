@@ -7,7 +7,9 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import Button from "@mui/material/Button";
 
-function SingleQuestion() {
+function SingleQuestion(props) {
+  let questionlist = [];
+
   return (
     <Box
       sx={{
@@ -39,19 +41,25 @@ function SingleQuestion() {
               color: "black",
             }}
           >
-            What is Your Favorite Number ?
+            {props.question}{" "}
           </FormLabel>{" "}
           <RadioGroup
-            defaultValue="one"
             name="radio-buttons-group"
             sx={{
               pt: 2,
               pb: 2,
             }}
           >
-            <FormControlLabel value="one" control={<Radio />} label="One" />
-            <FormControlLabel value="two" control={<Radio />} label="Two" />
-            <FormControlLabel value="three" control={<Radio />} label="Three" />
+            {props.ans.forEach((element) => {
+              questionlist.push(
+                <FormControlLabel
+                  value={element}
+                  control={<Radio />}
+                  label={element}
+                />
+              );
+            })}
+            {questionlist}
           </RadioGroup>{" "}
         </FormControl>{" "}
         <Button

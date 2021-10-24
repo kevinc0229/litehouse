@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+main {
+  background-color: "#f1f2f6";
+}
+>>>>>>> 487ba73fb2a8c38666feee3a2fd69d47416c0d17
 .App-logo {
   height: 40vmin;
   pointer-events: none;

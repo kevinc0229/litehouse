@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Questionnaire from "./pages/Questionnaire";
 import BottomNavigation from "./components/BottomNavigation";
+
 function App() {
   return (
     <main>
@@ -30,7 +31,7 @@ function App() {
             position="static"
             elevation={0}
             sx={{
-              backgroundColor: "white",
+              backgroundColor: "#f1f2f6",
             }}
           >
             <Toolbar>
@@ -76,11 +77,19 @@ function App() {
           </Route>{" "}
           <Redirect to="/" />
         </Switch>{" "}
+<<<<<<< HEAD
         <Box
         >
           <BottomNavigation></BottomNavigation>
         </Box>
       </Router>
+=======
+      </Router>{" "}
+      <Box>
+        {" "}
+        <BottomNavigation />
+      </Box>
+>>>>>>> 487ba73fb2a8c38666feee3a2fd69d47416c0d17
     </main>
   );
 }

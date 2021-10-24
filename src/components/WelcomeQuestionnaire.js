@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import welcome from "../img/welcome.jpg";
 
-export default function Welcome() {
+export default function WelcomeQuestionnaire() {
   return (
     <Box
       sx={{
@@ -15,7 +15,6 @@ export default function Welcome() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          width: 500,
           height: 400,
           mx: "auto",
           alignItems: "center",
@@ -30,7 +29,7 @@ export default function Welcome() {
             color: "#f1f2f6",
           }}
         >
-          LOGO{" "}
+          LET'S GET TO KNOW YOU{" "}
         </Typography>{" "}
         <Typography
           variant="body1"
@@ -40,10 +39,7 @@ export default function Welcome() {
             color: "#f1f2f6",
           }}
         >
-          -The state of our souls, our need for Christ(Romans 3: 23) - We are
-          all deserving of eternal hell(Romans 6: 23) - We are saved by faith
-          through trust in Jesus Christ(Romans 10: 9 - 10, Galatians 2: 16,
-          Ephesians 2: 8 - 9){" "}
+          Here are some questions for you{" "}
         </Typography>{" "}
       </Box>{" "}
     </Box>
