@@ -1,4 +1,3 @@
-import BottomNavigation from "../components/BottomNavigation";
 import Questions from "../components/Questions";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
@@ -38,7 +37,7 @@ function Questionnaire() {
           Submit{" "}
         </Button>{" "}
       </Box>
-      <BottomNavigation />
+      
     </main>
   );
 }

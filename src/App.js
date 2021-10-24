@@ -76,6 +76,10 @@ function App() {
           </Route>{" "}
           <Redirect to="/" />
         </Switch>{" "}
+        <Box
+        >
+          <BottomNavigation></BottomNavigation>
+        </Box>
       </Router>
     </main>
   );
